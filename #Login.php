@@ -13,7 +13,7 @@
             <div class="modal-content">
                 <span class="close" id="closeModal">&times;</span>
                 <h1><center>Login</center></h1>
-                <form id="loginForm" onsubmit="return handleLogin(event)">
+                <form id="loginForm" action="LoginSession.php">
                     <label for="username">Username or Email Address:</label>
                     <input type="text" id="username" name="username" placeholder="Juan1 or Juan@example.com" required>
                     
@@ -34,7 +34,7 @@
                 <span class="close" id="closeSignUpModal">&times;</span>
                 <h1> <center> Create an Account</center></h1>
                 <div class="scrollable-form">
-                    <form id="signUpForm" onsubmit="php/RegisterSession.php">
+                    <form id="signUpForm" action="RegisterSession.php">
                         <label for="newUsername">Username:</label>
                         <input name="username" type="text" id="newUsername" placeholder="Enter your username" required>
                         
