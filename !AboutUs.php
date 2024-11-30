@@ -48,7 +48,7 @@
 </div>
         
     <!-- External JavaScript -->
-    <script src="javascript/QCesport.js"></script>
+    <script src="javascript/QCE.js"></script>
 </body>
 
 </html>

@@ -168,6 +168,6 @@
     <!-- Footer Section ito-->
     <?php include "#Footer.php"; ?>
 
-    <script src="javascript/QCEshop.js"></script>
+    <script src="javascript/QCE.js"></script>
 </body>
 </html>

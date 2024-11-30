@@ -45,13 +45,16 @@
                         </div>
 
                         <label for="num">Student Number:</label>
-                        <input name="studentNumber" type="number" id="num" placeholder="Student Number - 24-0000" required>
+                        <input name="studentNumber" type="text" id="num" placeholder="Student Number - 24-0000" required oninput="formatStudentNumber(event)">
 
                         <label for="bday">Date of Birth:</label>
                         <input name="dateOfBirth" type="date" id="bday" required>
 
                         <label for="course">Course:</label>
                         <input name="course" type="text" id="course" placeholder="Course Name - BSIT" required>
+
+                        <label for="course">Address:</label>
+                        <input name="address" type="text" id="address" placeholder="Enter your address" required>
 
                         <label for="email">Email Address:</label>
                         <input name="email" type="email" id="newEmail" placeholder="Email Address" required>

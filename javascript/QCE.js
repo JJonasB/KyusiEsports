@@ -299,3 +299,21 @@ function viewPurchases() {
 function viewCart() {
     console.log("Viewing cart.");
 } 
+
+//limits the student number to 6 characters, and adds a dash
+function formatStudentNumber(event) {
+    const input = event.target;
+    let value = input.value.replace(/\D/g, ''); // Remove non-digit characters
+
+    // Limit to 7 characters
+    if (value.length > 6) {
+        value = value.slice(0, 6);
+    }
+
+    // Add dash after the first two digits
+    if (value.length > 2) {
+        value = value.slice(0, 2) + '-' + value.slice(2);
+    }
+
+    input.value = value; // Update input value
+}

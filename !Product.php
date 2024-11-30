@@ -177,6 +177,6 @@
 
     </script>
 
-    <script defer src="javascript/QCEshop.js"></script>
+    <script defer src="javascript/QCE.js"></script>
 </body>
 </html>
