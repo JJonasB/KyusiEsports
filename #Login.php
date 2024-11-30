@@ -66,7 +66,7 @@
                         <label for="email">Email Address:</label>
                         <input name="email" type="email" id="newEmail" placeholder="Email Address" required>
 
-                        <label for="pass1">Password:</label>
+                        <label for="password">Password:</label>
                         <input name="password" type="password" id="pass1" placeholder="Password" required>
 
                         <label for="pass2">Confirm Password:</label>
