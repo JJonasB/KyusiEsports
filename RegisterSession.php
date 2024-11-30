@@ -21,8 +21,8 @@ $insertStmt -> execute();
 
 echo "<Script>
         altert(\"Registered Successfully\");
-        window.location.href = '../../index.php';
+        window.location.href = 'index.php';
         </Script>";
 
     $conn->commit();
-    ?>
+?>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
 
@@ -33,7 +34,7 @@
                 <span class="close" id="closeSignUpModal">&times;</span>
                 <h1> <center> Create an Account</center></h1>
                 <div class="scrollable-form">
-                    <form id="signUpForm" onsubmit="return handleSignUp(event)">
+                    <form id="signUpForm" onsubmit="RegisterSession.php">
                         <label for="newUsername">Username:</label>
                         <input name="username" type="text" id="newUsername" placeholder="Enter your username" required>
                         
