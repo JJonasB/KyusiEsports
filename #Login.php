@@ -34,9 +34,9 @@
                 <span class="close" id="closeSignUpModal">&times;</span>
                 <h1> <center> Create an Account</center></h1>
                 <div class="scrollable-form">
-                    <form id="signUpForm" action="RegisterSession.php">
+                    <form id="signUpForm" method="POST" action="RegisterSession.php">
                         <label for="newUsername">Username:</label>
-                        <input name="username" type="text" id="newUsername" placeholder="Enter your username" required>
+                        <input name="username" type="text" id="Username" placeholder="Enter your username" required>
                         
                         <label>Student Name:</label>
                         <div class="name-container">
@@ -64,10 +64,10 @@
                         <input name="contact" type="text" id="contact" placeholder="09*********" required oninput="formatContactNumber(event)">
 
                         <label for="email">Email Address:</label>
-                        <input name="email" type="email" id="newEmail" placeholder="Email Address" required>
+                        <input name="email" type="email" id="Email" placeholder="Email Address" required>
 
                         <label for="password">Password:</label>
-                        <input name="password" type="password" id="pass1" placeholder="Password" required>
+                        <input name="password" type="password" id="password" placeholder="Password" required>
 
                         <label for="pass2">Confirm Password:</label>
                         <input type="password" id="pass2" placeholder="Confirm Password" required>
