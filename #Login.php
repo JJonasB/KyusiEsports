@@ -34,7 +34,7 @@
                 <span class="close" id="closeSignUpModal">&times;</span>
                 <h1> <center> Create an Account</center></h1>
                 <div class="scrollable-form">
-                    <form id="signUpForm" onsubmit="RegisterSession.php">
+                    <form id="signUpForm" onsubmit="php/RegisterSession.php">
                         <label for="newUsername">Username:</label>
                         <input name="username" type="text" id="newUsername" placeholder="Enter your username" required>
                         

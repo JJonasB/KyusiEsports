@@ -20,9 +20,9 @@ $insertStmt -> execute();
 
 
 echo "<Script>
-        altert(\"Registered Successfully\");
+        altert(\"Registered Successfully, You can now Log In.\");
         window.location.href = 'index.php';
         </Script>";
 
     $conn->commit();
-?>
+    ?>
