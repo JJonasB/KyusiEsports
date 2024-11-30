@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 30, 2024 at 08:15 AM
+-- Generation Time: Nov 30, 2024 at 02:02 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -28,11 +28,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `cart` (
+  `ID` int(11) NOT NULL,
   `Username` varchar(25) NOT NULL,
   `product_name` varchar(255) NOT NULL,
-  `quantity` int(180) NOT NULL,
+  `quantity` varchar(180) NOT NULL,
   `size` varchar(255) NOT NULL,
-  `initial_amount` int(180) NOT NULL
+  `initial_amount` varchar(180) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
@@ -42,6 +43,7 @@ CREATE TABLE `cart` (
 --
 
 CREATE TABLE `product` (
+  `ID` int(11) NOT NULL,
   `product_name` varchar(255) NOT NULL,
   `quantity` int(180) NOT NULL,
   `size` varchar(255) NOT NULL,
@@ -89,6 +91,7 @@ INSERT INTO `registration` (`ID`, `Username`, `firstName`, `middleName`, `lastNa
 --
 
 CREATE TABLE `transaction` (
+  `ID` int(11) NOT NULL,
   `Username` varchar(25) NOT NULL,
   `product_name` varchar(255) NOT NULL,
   `quantity` int(180) NOT NULL,
@@ -105,9 +108,27 @@ CREATE TABLE `transaction` (
 --
 
 --
+-- Indexes for table `cart`
+--
+ALTER TABLE `cart`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `product`
+--
+ALTER TABLE `product`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Indexes for table `registration`
 --
 ALTER TABLE `registration`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `transaction`
+--
+ALTER TABLE `transaction`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -115,10 +136,28 @@ ALTER TABLE `registration`
 --
 
 --
+-- AUTO_INCREMENT for table `cart`
+--
+ALTER TABLE `cart`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `product`
+--
+ALTER TABLE `product`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `registration`
 --
 ALTER TABLE `registration`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `transaction`
+--
+ALTER TABLE `transaction`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
