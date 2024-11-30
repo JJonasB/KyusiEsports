@@ -35,7 +35,7 @@
                 } else {
                     echo "<a href='#' class='cartcon'> <i class='ri-shopping-cart-2-fill'> </i> Cart</a>";
                     echo "<a href='#' class=''> <i class='ri-user-fill'> </i>Profile</a>";
-                    echo "<a href='#' class='user'> </i>Logout</a>";
+                    echo "<a href='Log-out.php' class=''> </i>Logout</a>";
                     echo "<div class='bx bx-menu' id='menu-icon'>";
                 }
                 ?>
