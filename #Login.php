@@ -57,7 +57,7 @@
                         <input name="address" type="text" id="address" placeholder="Enter your address" required>
 
                         <label for="course">Contact:</label>
-                        <input name="contact" type="text" id="contact" placeholder="09*********" required>
+                        <input name="contact" type="text" id="contact" placeholder="09*********" required oninput="formatContactNumber(event)">
 
                         <label for="email">Email Address:</label>
                         <input name="email" type="email" id="newEmail" placeholder="Email Address" required>

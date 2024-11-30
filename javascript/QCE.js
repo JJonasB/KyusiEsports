@@ -300,7 +300,7 @@ function viewCart() {
     console.log("Viewing cart.");
 } 
 
-//limits the student number to 6 characters, and adds a dash
+//limits the student number to 6 characters, and adds a dash to the student number :)
 function formatStudentNumber(event) {
     const input = event.target;
     let value = input.value.replace(/\D/g, ''); // Remove non-digit characters
@@ -315,5 +315,14 @@ function formatStudentNumber(event) {
         value = value.slice(0, 2) + '-' + value.slice(2);
     }
 
-    input.value = value; // Update input value
+    input.value = value;
+}
+//does the same as the function above but only limits it to 11 numbers without the dash, and this is for contact number.
+function formatContactNumber(event){
+    const input = event.target;
+    let value = input.value.replace(/\D/g, '');
+    if(value.length > 11){
+        value = value.slice(0, 11);
+    }
+    input.value = value;
 }
