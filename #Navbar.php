@@ -44,4 +44,5 @@
         </header>
     
     <?php include "#Login.php";?>
+</body>
 </html>
