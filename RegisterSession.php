@@ -16,7 +16,7 @@ $dbPassword = $_POST ['password'];
 
 
 $insertStmt = $conn ->prepare("INSERT INTO `registration` (`Username`, `firstName`, `middleName`, `lastName`,`studentNumber`,`dateOfBirth`,`address`,`contactNumber`,`course`,`section`,`email`,`password`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
-$insertStmt ->bind_param('sssssdssssss',$dbuser,$dbFirst,$dbMiddle,$dbLast,$dbStudentNumber,$dbDate,$dbAddress,$dbContact,$dbCourse,$dbSection,$dbEmail,$dbPassword);
+$insertStmt ->bind_param('ssssssssssss',$dbuser,$dbFirst,$dbMiddle,$dbLast,$dbStudentNumber,$dbDate,$dbAddress,$dbContact,$dbCourse,$dbSection,$dbEmail,$dbPassword);
 $insertStmt -> execute();
 
 
