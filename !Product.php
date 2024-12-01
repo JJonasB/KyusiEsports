@@ -33,25 +33,29 @@
                 </div>
                  
                 <div class="single-pro-details">
+                    <form id="formProduct1" action ="CartSessionproduct1.php" method="POST">                   
                     <h6>Kyusi Esports / Sweater</h6>
+                    <input name="product_name" type="text" id="product_name" value="Kyusi Esports/ Sweater" class="hidden">
                     <h4>Kyusi Esports's Fashion Sweaters</h4>
                     <h2>₱100</h2>
-                    <select>
-                        <option>Select Size</option>
-                        <option>XL</option>
-                        <option>XXL</option>
-                        <option>Small</option>
-                        <option>Medium</option>
-                        <option>Large</option>
+                    <input name="initial_amount" type="text" id="price" value="100" class="hidden">
+                    <select name="size" id="size">
+                        <option value="">Select Size</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
                     </select>
-                    <input type="number" value="1">
+                    <input name="quantity" type="text" id="quantity" value="">
                     <div class="popup-container">
-                    <button type= "submit" class="normalbtn" onclick="openPopup()">Add To Cart</button>
+                    <button type= "submit" class="normalbtn">Add To Cart</button>
                     <div class="popup" id="popup">
                         <h2>Thank You!</h2>
                         <p>It has been added to your cart! Add more.</p>
                         <button type="button" onclick="closePopup()">Okay</button>
                     </div>
+                    </form> 
                     </div>
                     <button class="normalbtn" id="btnbuy">Buy</button>
                     <h4>Product Details</h4>

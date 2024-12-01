@@ -12,14 +12,14 @@
             <div class="modal-content">
                 <span class="close" id="closeModal">&times;</span>
                 <h1><center>Login</center></h1>
-                <form id="loginForm" onsubmit="return handleLogin(event)">
+                <form method= "POST" action="LoginSession.php">
                     <label for="username">Username or Email Address:</label>
                     <input type="text" id="username" name="username" placeholder="Juan1 or Juan@example.com" required>
                     
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password"  placeholder="Yourpassword123" required>
                     
-                    <button type="submit">Login</button>
+                    <button type="submit" class="login btn-primary">Login</button>
                 </form>
                 <p>Don't have an account? <a href="#" id="showSignUp">Create an account</a></p>
                 <div id="notification" style="color: red; display: none;">
@@ -33,9 +33,9 @@
                 <span class="close" id="closeSignUpModal">&times;</span>
                 <h1> <center> Create an Account</center></h1>
                 <div class="scrollable-form">
-                    <form id="signUpForm" onsubmit="return handleSignUp(event)">
+                    <form id="signUpForm" method="POST" action="RegisterSession.php">
                         <label for="newUsername">Username:</label>
-                        <input name="username" type="text" id="newUsername" placeholder="Enter your username" required>
+                        <input name="username" type="text" id="Username" placeholder="Enter your username" required>
                         
                         <label>Student Name:</label>
                         <div class="name-container">
@@ -53,14 +53,20 @@
                         <label for="course">Course:</label>
                         <input name="course" type="text" id="course" placeholder="Course Name - BSIT" required>
 
+                        <label for="section">Section:</label>
+                        <input name="section" type="text" id="section" placeholder="Section Name - 1E" required>
+
                         <label for="course">Address:</label>
                         <input name="address" type="text" id="address" placeholder="Enter your address" required>
 
-                        <label for="email">Email Address:</label>
-                        <input name="email" type="email" id="newEmail" placeholder="Email Address" required>
+                        <label for="course">Contact:</label>
+                        <input name="contact" type="text" id="contact" placeholder="09*********" required oninput="formatContactNumber(event)">
 
-                        <label for="pass1">Password:</label>
-                        <input name="password" type="password" id="pass1" placeholder="Password" required>
+                        <label for="email">Email Address:</label>
+                        <input name="email" type="email" id="Email" placeholder="Email Address" required>
+
+                        <label for="password">Password:</label>
+                        <input name="password" type="password" id="password" placeholder="Password" required>
 
                         <label for="pass2">Confirm Password:</label>
                         <input type="password" id="pass2" placeholder="Confirm Password" required>

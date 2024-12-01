@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 30, 2024 at 06:51 AM
+-- Generation Time: Nov 30, 2024 at 02:02 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,37 @@ SET time_zone = "+00:00";
 --
 -- Database: `test`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cart`
+--
+
+CREATE TABLE `cart` (
+  `ID` int(11) NOT NULL,
+  `Username` varchar(25) NOT NULL,
+  `product_name` varchar(255) NOT NULL,
+  `quantity` varchar(180) NOT NULL,
+  `size` varchar(255) NOT NULL,
+  `initial_amount` varchar(180) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product`
+--
+
+CREATE TABLE `product` (
+  `ID` int(11) NOT NULL,
+  `product_name` varchar(255) NOT NULL,
+  `quantity` int(180) NOT NULL,
+  `size` varchar(255) NOT NULL,
+  `initial_amount` int(180) NOT NULL,
+  `product_pic` longblob NOT NULL,
+  `product_details` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
@@ -53,9 +84,40 @@ INSERT INTO `registration` (`ID`, `Username`, `firstName`, `middleName`, `lastNa
 (3, 'Zam', 'Sam', 'Leonard', 'Barber', '241634', '2008-03-08', '', 0, 'IT', 'SBIT-1E', 'Barber.Sam.Leonard@gmail.com', 'jonasbalantetamayo'),
 (4, 'Terrestrial1 ', 'Gelba', 'Leonard', 'Mesa', '123123', '2024-11-01', '', 0, 'ETG', 'ASDSA', 'Terrestrial@Gelba', '123123123');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `transaction`
+--
+
+CREATE TABLE `transaction` (
+  `ID` int(11) NOT NULL,
+  `Username` varchar(25) NOT NULL,
+  `product_name` varchar(255) NOT NULL,
+  `quantity` int(180) NOT NULL,
+  `size` int(180) NOT NULL,
+  `initial_amount` int(180) NOT NULL,
+  `payment_amount` int(180) NOT NULL,
+  `gcash_number` int(180) NOT NULL,
+  `status` varchar(25) NOT NULL,
+  `ref_number` int(180) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `cart`
+--
+ALTER TABLE `cart`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `product`
+--
+ALTER TABLE `product`
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- Indexes for table `registration`
@@ -64,14 +126,38 @@ ALTER TABLE `registration`
   ADD PRIMARY KEY (`ID`);
 
 --
+-- Indexes for table `transaction`
+--
+ALTER TABLE `transaction`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `cart`
+--
+ALTER TABLE `cart`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `product`
+--
+ALTER TABLE `product`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `registration`
 --
 ALTER TABLE `registration`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `transaction`
+--
+ALTER TABLE `transaction`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
