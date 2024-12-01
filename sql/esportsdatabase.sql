@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2024 at 02:48 PM
+-- Generation Time: Dec 01, 2024 at 04:17 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `cart` (
   `Username` varchar(25) NOT NULL,
   `product_name` varchar(255) NOT NULL,
+  `product_type` varchar(255) NOT NULL,
   `quantity` int(180) NOT NULL,
   `size` varchar(255) NOT NULL,
   `initial_amount` int(180) NOT NULL
@@ -39,11 +40,12 @@ CREATE TABLE `cart` (
 -- Dumping data for table `cart`
 --
 
-INSERT INTO `cart` (`Username`, `product_name`, `quantity`, `size`, `initial_amount`) VALUES
-('Jerome', 'Kyusi Esports/ Sweater', 0, '', 100),
-('test', 'Kyusi Esports/ Sweater', 43, 'XL', 100),
-('test', 'Kyusi Esports/ Sweater', 432, 'Medium', 100),
-('test', 'Kyusi Esports/ Sweater', 432, 'Medium', 100);
+INSERT INTO `cart` (`Username`, `product_name`, `product_type`, `quantity`, `size`, `initial_amount`) VALUES
+('Jerome', 'Kyusi Esports/ Sweater', '', 0, '', 100),
+('test', 'Kyusi Esports/ Sweater', '', 43, 'XL', 100),
+('test', 'Kyusi Esports/ Sweater', '', 432, 'Medium', 100),
+('test', 'Kyusi Esports/ Sweater', '', 432, 'Medium', 100),
+('test', 'Kyusi Esports/ Tote Bag', 'Wingman', 12, '', 250);
 
 -- --------------------------------------------------------
 
