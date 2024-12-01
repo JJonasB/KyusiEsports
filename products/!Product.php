@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyusi Esports</title>
-    <link rel="stylesheet" href="css/QCEshop.css">
+    <link rel="stylesheet" href="../css/QCEshop.css">
 </head>
 <body>
     <div class="wrapper">
-    <?php include "#Navbar.php"; ?>
+    <?php include "../#Navbar.php"; ?>
 
         <!-- Main Section ito-->
         <main>
             <section id="prodetails" class="section-p1">
                 <div class="single-pro-image">
-                    <img src="qceimages/firstimage.webp" width="100%" id="MainImg">
+                    <img src="../qceimages/firstimage.webp" width="100%" id="MainImg">
                 
                     <div class="small-img-group">
                         <div class ="small-img-col">
-                            <img src="qceimages/firstimage.webp" width="100%" class="small-img">
+                            <img src="../qceimages/firstimage.webp" width="100%" class="small-img">
                         </div>
                         <div class ="small-img-col">
-                            <img src="qceimages/secimage.webp" width="100%" class="small-img">
+                            <img src="../qceimages/secimage.webp" width="100%" class="small-img">
                         </div>
                         <div class ="small-img-col">
-                            <img src="qceimages/thirdimage.webp" width="100%" class="small-img">
+                            <img src="../qceimages/thirdimage.webp" width="100%" class="small-img">
                         </div>
                         <div class ="small-img-col">
-                            <img src="qceimages/fourthimage.webp" width="100%" class="small-img">
+                            <img src="../qceimages/fourthimage.webp" width="100%" class="small-img">
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
         </main>
         
     <!-- Footer -->
-    <?php include "#Footer.php"; ?>
+    <?php include "../#Footer.php"; ?>
 
     <script>
         let popup = document.getElementById("popup");

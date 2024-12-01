@@ -3,7 +3,7 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="/KyusiEsports/css/footer.css">
     <title>Footer</title>
  </head>
  <body>
@@ -44,7 +44,7 @@
                     <div class="social-links">
                         <a href="https://www.facebook.com/KyusiEsportsCommunity" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/kyusiesports/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
