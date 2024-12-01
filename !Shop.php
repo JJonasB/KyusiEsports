@@ -22,7 +22,7 @@
                 <h2>Featured Merchandise</h2>
                 <p>Kyusi Esports Cool Modern Designs</p>
                 <div class="pro-container">
-                    <div class="pro" onclick="window.location.href='!Product.php';">
+                    <div class="pro" onclick="window.location.href='pruduct/!Product.php';">
                         <img src="qceimages/firstimage.webp" alt="">
                         <div class="des">
                             <span>Original 'to</span>
