@@ -34,18 +34,31 @@
                  
                 <div class="single-pro-details">
                     <form id="formProduct1" action ="../functions/CartSessionproduct1.php" method="POST">                   
-                    <h6>Kyusi Esports / Sweater</h6>
-                    <input name="product_name" type="text" id="product_name" value="Kyusi Esports/ Sweater" class="hidden">
-                    <h4>Kyusi Esports's Fashion Sweaters</h4>
-                    <h2>₱100</h2>
-                    <input name="initial_amount" type="text" id="price" value="100" class="hidden">
+                    <h6>Kyusi Esports / Stickers</h6>
+                    <input name="product_name" type="text" id="product_name" value="Kyusi Esports/ Stickers" class="hidden">
+                    <h4>Assorted Stickers</h4>
+                    <h2>₱10</h2>
+                    <input name="initial_amount" type="text" id="price" value="10" class="hidden">
                     <select name="size" id="size">
-                        <option value="">Select Size</option>
-                        <option value="XL">XL</option>
-                        <option value="XXL">XXL</option>
-                        <option value="Small">Small</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Large">Large</option>
+                        <option value="">Select Sticker</option>
+                        <option value="nana">Nana</option>
+                        <option value="lucas1">Lucas-Yeah</option>
+                        <option value="lucas2">Lucas-Die</option>
+                        <option value="lucas3">Lucas-Angy</option>
+                        <option value="lucas4">Lucas-Shock</option>
+                        <option value="lucas5">Lucas-Laugh</option>
+                        <option value="cici1">Cici-Shock</option>
+                        <option value="cici2">Cici-Laugh</option>
+                        <option value="cici3">Cici-Stop</option>
+                        <option value="cici4">Cici-Angy</option>
+                        <option value="cici5">Cici-Fear</option>
+                        <option value="cici6">Cici-cri</option>
+                        <option value="Omen">Omen</option>
+                        <option value="Jett">Jett</option>
+                        <option value="clove">Clove</option>
+                        <option value="lars">Lars</option>
+                        <option value="kazuya">Kazuya</option>
+                        <option value="alisa">Alisa</option>
                     </select>
                     <input name="quantity" type="text" id="quantity" value="">
                     <div class="popup-container">
@@ -57,7 +70,7 @@
                     </div>
                     </form> 
                     </div>
-                    <button class="normalbtn" id="btnbuy">Buy</button>
+                    <!-- <button class="normalbtn" id="btnbuy">Buy</button> -->
                     <h4>Product Details</h4>
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto molestiae amet eos, animi eveniet nesciunt, fuga vel distinctio similique itaque eligendi non nulla. Facere dignissimos sunt explicabo, aut amet illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis facere dolor illo inventore perferendis libero dolore rerum eveniet. Libero reprehenderit fugiat suscipit animi consequatur incidunt odio possimus! Sed, optio placeat.</span>
                 </div>
