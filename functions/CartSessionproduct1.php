@@ -4,14 +4,14 @@ session_start();
 
 $dbUsername = $_SESSION['username'];
 $dbproduct_name = $_POST['product_name'];
+$dbproduct_type = $_POST['product_type'];
 $dbquantity = $_POST['quantity'];
-$dbsize = $_POST['size'];
 $dbinitial_amount = $_POST['initial_amount'];
 
 
 
-$insertStmt = $conn ->prepare("INSERT INTO `cart` (`Username`, `product_name`, `quantity`, `size`,`initial_amount`) VALUES (?,?,?,?,?)");
-$insertStmt ->bind_param('sssss',$dbUsername,$dbproduct_name,$dbquantity,$dbsize,$dbinitial_amount);
+$insertStmt = $conn ->prepare("INSERT INTO `cart` (`Username`, `product_name`,`product_type`, `quantity`,`initial_amount`) VALUES (?,?,?,?,?)");
+$insertStmt ->bind_param('sssss',$dbUsername,$dbproduct_name,$dbproduct_type,$dbquantity,$dbinitial_amount);
 $insertStmt -> execute();
 
 

@@ -39,13 +39,18 @@
                     <h4>Kyusi Esports's Fashion Bag</h4>
                     <h2>₱250</h2>
                     <input name="initial_amount" type="text" id="price" value="250" class="hidden">
-                    <select name="size" id="size">
-                        <option value="">Select Size</option>
-                        <option value="Small">Small</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Medium">Medium</option>
+                    <select name="product_type" type="text" id="product_type">
+                        <option value="">Select Bag</option>
+                        <option value="Wingman">Wingman</option>
+                        <option value="AdaWong">Ada Wong</option>
+                        <option value="Adawong2">Ada Wong 2</option>
+                        <option value="Grind">Grind, Grind, Grind</option>
+                        <option value="New_Game">New Game</option>
+                        <option value="Level_Up">Level up</option>
+                        <option value="MeowMeow">Meow Meow</option>
+                        <option value="Power">Power Text!</option>
+                        <option value="Lili">Lili De Rochefort</option>
+                        <option value="JinKazama">Jin Kazama</option>
                     </select>
                     <input name="quantity" type="text" id="quantity" value="">
                     <div class="popup-container">
