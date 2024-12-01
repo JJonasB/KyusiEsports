@@ -1,0 +1,161 @@
+/* Main Content */
+.section-p1 {
+    padding: 40px 80px;
+}
+
+/*Cart Page*/
+
+#cartco {
+    overflow-x: auto;
+}
+
+#cartco table{
+    background-color: #525B44;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#cartco i {
+    color: #fd3029;
+    font-size: clamp(1rem, 1.2vw, 1.7rem);
+}
+
+#cartco img {
+    width: 70px;
+}
+
+#cartco td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+#cartco td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+
+#cartco td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+
+#cartco td:nth-child(4) {
+    width: 150px;
+    text-align: center;
+}
+
+#cartco td:nth-child(4), 
+#cartco td:nth-child(5),
+#cartco td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+
+#cartco td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cartco table thead {
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+}
+
+#cartco table thead td {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: clamp(1.1rem, 1.1vw, 1.7rem);
+    padding: 18px 0;
+}
+
+#cartco table tr td {
+    padding-top: 15px;
+}
+
+#cartco table td {
+    font-size: clamp(1.1rem, 1.1vw, 1.7rem);
+}
+
+.normalbtn {
+    font-size: clamp(1rem, 0.7vw, 1.6rem);
+    font-weight: 200;
+    color: #fff;
+    padding: 12px 20px;
+    background-color: #fd3029;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    margin-top: 10px;
+}
+
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#codepon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3, 
+#subtotal h3 {
+    padding-bottom: 15px;
+}
+
+#codepon input {
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #fff;
+}
+
+#subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #fff;
+    padding: 30px;
+    background-color: #525B44;
+}
+
+#subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td {
+    width: 50%;
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: clamp(1.1rem, 1.1vw, 1.7rem);
+} 
+
+@media(max-width: 1110px) {
+    .section-p1 {
+        padding: 20px 10px;
+    }
+}
+
+@media(max-width: 500px) {
+    #cart-add {
+        flex-direction: column;
+    }
+
+    #codepon {
+        width: 100%;
+    }
+
+    #subtotal {
+        width: 100%;
+        padding: 20px;
+    }
+}
