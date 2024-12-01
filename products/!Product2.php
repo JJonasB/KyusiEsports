@@ -33,19 +33,12 @@
                 </div>
                  
                 <div class="single-pro-details">
-                    <form id="formProduct1" action ="../functions/CartSessionproduct1.php" method="POST">                   
-                    <h6>Kyusi Esports / Sweater</h6>
-                    <input name="product_name" type="text" id="product_name" value="Kyusi Esports/ Sweater" class="hidden">
-                    <h4>Kyusi Esports's Fashion Sweaters</h4>
-                    <h2>₱100</h2>
-                    <input name="initial_amount" type="text" id="price" value="100" class="hidden">
-                    <select name="size" id="size">
-                        <option value="">Select Size</option>
-                        <option value="XL">XL</option>
-                        <option value="XXL">XXL</option>
-                        <option value="Small">Small</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Large">Large</option>
+                    <form id="formProduct1" action ="../functions/CartSessionproduct2.php" method="POST">                   
+                    <h6>Kyusi Esports / ID Lace</h6>
+                    <input name="product_name" type="text" id="product_name" value="Kyusi Esports/ ID Lace" class="hidden">
+                    <h4>Kyusi Esports' ID Lace</h4>
+                    <h2>₱50</h2>
+                    <input name="initial_amount" type="text" id="price" value="50" class="hidden">
                     </select>
                     <input name="quantity" type="text" id="quantity" value="">
                     <div class="popup-container">
@@ -57,7 +50,7 @@
                     </div>
                     </form> 
                     </div>
-                    <button class="normalbtn" id="btnbuy">Buy</button>
+                    <!-- <button class="normalbtn" id="btnbuy">Buy</button>  -->
                     <h4>Product Details</h4>
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto molestiae amet eos, animi eveniet nesciunt, fuga vel distinctio similique itaque eligendi non nulla. Facere dignissimos sunt explicabo, aut amet illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis facere dolor illo inventore perferendis libero dolore rerum eveniet. Libero reprehenderit fugiat suscipit animi consequatur incidunt odio possimus! Sed, optio placeat.</span>
                 </div>

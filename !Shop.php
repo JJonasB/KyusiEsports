@@ -38,11 +38,11 @@
                         </div>
                         <i class='bx bxs-cart-alt cartbox'></i>
                     </div>
-                    <div class="pro" onclick="window.location.href='product/!Product.php';">
+                    <div class="pro" onclick="window.location.href='products/!Product2.php';">
                         <img src="qceimages/secimage.webp" alt="">
                         <div class="des">
-                            <span>Original 'to</span>
-                            <h5>Pinakamaangas na Sweater sa QCU</h5>
+                            <span>Original din 'to</span>
+                            <h5>Napakaangas na ID Lace ng Kyusi Esports</h5>
                             <div class="star">
                                 <i class="ri-star-fill"></i>
                                 <i class="ri-star-fill"></i>
