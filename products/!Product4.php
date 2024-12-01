@@ -41,24 +41,24 @@
                     <input name="initial_amount" type="text" id="price" value="10" class="hidden">
                     <select name="product_type" id="product_type">
                         <option value="">Select Sticker</option>
-                        <option value="nana">Nana</option>
-                        <option value="lucas1">Lucas-Yeah</option>
-                        <option value="lucas2">Lucas-Die</option>
-                        <option value="lucas3">Lucas-Angy</option>
-                        <option value="lucas4">Lucas-Shock</option>
-                        <option value="lucas5">Lucas-Laugh</option>
-                        <option value="cici1">Cici-Shock</option>
-                        <option value="cici2">Cici-Laugh</option>
-                        <option value="cici3">Cici-Stop</option>
-                        <option value="cici4">Cici-Angy</option>
-                        <option value="cici5">Cici-Fear</option>
-                        <option value="cici6">Cici-cri</option>
-                        <option value="Omen">Omen</option>
-                        <option value="Jett">Jett</option>
-                        <option value="clove">Clove</option>
-                        <option value="lars">Lars</option>
-                        <option value="kazuya">Kazuya</option>
-                        <option value="alisa">Alisa</option>
+                        <option value="Nana">Nana Sticker</option>
+                        <option value="Lucas_Yeah">Lucas Yeah Sticker</option>
+                        <option value="Lucas_Die">Lucas Die Sticker</option>
+                        <option value="Lucas_Angry">Lucas Angy Sticker</option>
+                        <option value="Lucas_Shock">Lucas Shock Sticker</option>
+                        <option value="Lucas_Laugh">Lucas Laugh Sticker</option>
+                        <option value="Cici_Shock">Cici Shock Sticker</option>
+                        <option value="Cici_Laugh">Cici Laugh Sticker</option>
+                        <option value="Cici_Stop">Cici Stop Sticker</option>
+                        <option value="Cici_Angry">Cici Angy Sticker</option>
+                        <option value="Cici_Fear">Cici Fear Sticker</option>
+                        <option value="Cici_Cry">Cici Cri Sticker</option>
+                        <option value="Omen">Omen Sticker</option>
+                        <option value="Jett">Jett Sticker</option>
+                        <option value="Clove">Clove Sticker</option>
+                        <option value="Lars">Lars Sticker</option>
+                        <option value="Kazuya">Kazuya Sticker</option>
+                        <option value="Alisa">Alisa Sticker</option>
                     </select>
                     <input name="quantity" type="text" id="quantity" value="">
                     <div class="popup-container">
