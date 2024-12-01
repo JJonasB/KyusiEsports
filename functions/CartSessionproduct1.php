@@ -2,7 +2,7 @@
 include "Conn.php";
 
 
-$dbUsername = $_SESSION["username"];
+$dbUsername = $_SESSION["Username"];
 $dbproduct_name = $_POST['product_name'];
 $dbquantity = $_POST['quantity'];
 $dbsize = $_POST['size'];

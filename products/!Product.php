@@ -33,7 +33,7 @@
                 </div>
                  
                 <div class="single-pro-details">
-                    <form id="formProduct1" action ="CartSessionproduct1.php" method="POST">                   
+                    <form id="formProduct1" action ="../functions/CartSessionproduct1.php" method="POST">                   
                     <h6>Kyusi Esports / Sweater</h6>
                     <input name="product_name" type="text" id="product_name" value="Kyusi Esports/ Sweater" class="hidden">
                     <h4>Kyusi Esports's Fashion Sweaters</h4>
