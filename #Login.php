@@ -12,7 +12,7 @@
             <div class="modal-content">
                 <span class="close" id="closeModal">&times;</span>
                 <h1><center>Login</center></h1>
-                <form id="loginForm" method= "POST" action="LoginSession.php">
+                <form id="loginForm" method= "POST" action="functions/LoginSession.php">
                     <label for="username">Username or Email Address:</label>
                     <input type="text" id="username" name="username" placeholder="Juan1 or Juan@example.com" required>
                     
@@ -33,7 +33,7 @@
                 <span class="close" id="closeSignUpModal">&times;</span>
                 <h1> <center> Create an Account</center></h1>
                 <div class="scrollable-form">
-                    <form id="signUpForm" method="POST" action="RegisterSession.php">
+                    <form id="signUpForm" method="POST" action="functions/RegisterSession.php">
                         <label for="newUsername">Username:</label>
                         <input name="username" type="text" id="Username" placeholder="Enter your username" required>
                         

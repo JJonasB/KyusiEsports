@@ -22,7 +22,7 @@ $insertStmt -> execute();
 
 echo "<Script>
         alert(\"Registered Successfully, You can now Log In.\");
-        window.location.href = 'index.php';
+        window.location.href = '../index.php';
         </Script>";
 
     $insertStmt->close();

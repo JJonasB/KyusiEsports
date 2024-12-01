@@ -34,7 +34,7 @@
                 } else {
                     echo "<a href='!checkout.php' class='cartcon'> <i class='ri-shopping-cart-2-fill'> </i> Cart</a>";
                     echo "<a href='#' class=''> <i class='ri-user-fill'> </i>". htmlspecialchars($_SESSION['username'])."</a>";
-                    echo "<a href='Log-out.php' class=''> </i>Logout</a>";
+                    echo "<a href='functions/Log-out.php' class=''> </i>Logout</a>";
                     echo "<div class='bx bx-menu' id='menu-icon'>";
                 }
                 ?>

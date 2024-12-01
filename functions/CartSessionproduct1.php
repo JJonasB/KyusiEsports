@@ -17,7 +17,7 @@ $insertStmt -> execute();
 
 echo "<Script>
         altert(\"Registered Successfully, You can now Log In.\");
-        window.location.href = '/!Shop.php';
+        window.location.href = '../!Shop.php';
         </Script>";
 
     $insertStmt->close();

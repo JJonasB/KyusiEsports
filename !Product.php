@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="wrapper">
-    <?php include "../#Navbar.php"; ?>
+    <?php include "#Navbar.php"; ?>
 
         <!-- Main Section ito-->
         <main>
@@ -76,7 +76,7 @@
         </main>
         
     <!-- Footer -->
-    <?php include "../#Footer.php"; ?>
+    <?php include "#Footer.php"; ?>
 
     <script>
         let popup = document.getElementById("popup");
@@ -110,6 +110,6 @@
 
     </script>
 
-    <script defer src="../javascript/QCE.js"></script>
+    <script defer src="javascript/QCE.js"></script>
 </body>
 </html>
