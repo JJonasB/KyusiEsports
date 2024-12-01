@@ -12,7 +12,7 @@
             <div class="modal-content">
                 <span class="close" id="closeModal">&times;</span>
                 <h1><center>Login</center></h1>
-                <form method= "POST" action="LoginSession.php">
+                <form id="loginForm" method= "POST" action="LoginSession.php">
                     <label for="username">Username or Email Address:</label>
                     <input type="text" id="username" name="username" placeholder="Juan1 or Juan@example.com" required>
                     
