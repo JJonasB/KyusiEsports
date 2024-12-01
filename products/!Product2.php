@@ -33,9 +33,11 @@
                 </div>
                  
                 <div class="single-pro-details">
-                    <form id="formProduct1" action ="../functions/CartSessionproduct2.php" method="POST">                   
+                    <form id="formProduct1" action ="../functions/CartSessionproduct1.php" method="POST">                   
                     <h6>Kyusi Esports / ID Lace</h6>
                     <input name="product_name" type="text" id="product_name" value="Kyusi Esports/ ID Lace" class="hidden">
+                    <input name="product_type" type="text" id="product_type" value=" " class="hidden">
+                    <input name="size" type="text" id="size" value=" " class="hidden">
                     <h4>Kyusi Esports' ID Lace</h4>
                     <h2>₱50</h2>
                     <input name="initial_amount" type="text" id="price" value="50" class="hidden">

@@ -14,6 +14,9 @@ echo $dbsize;
 if (empty($dbsize)) {
     $dbsize = " ";
 }
+if (empty($dbproduct_type)) {
+    $dbproduct_type = " ";
+}
 
 $insertStmt = $conn ->prepare("INSERT INTO `cart` (`Username`, `product_name`,`product_type`, `size`, `quantity`,`initial_amount`) VALUES (?,?,?,?,?,?)");
 $insertStmt ->bind_param('ssssss',$dbUsername,$dbproduct_name,$dbproduct_type,$dbsize,$dbquantity,$dbinitial_amount);
