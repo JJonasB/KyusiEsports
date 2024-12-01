@@ -8,5 +8,5 @@ if (isset($_GET['product_id'])) {
 }
 
 header("Location: cart.php");
-exit;
+exit();
 ?>

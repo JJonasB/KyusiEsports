@@ -23,7 +23,7 @@ if ($user) {
         echo "Password Match!";
         $_SESSION['username'] = htmlspecialchars($user['Username']);
         header("Location: ../index.php");
-        exit;
+        exit();
     } else {
         echo "Password does not match.";
     }

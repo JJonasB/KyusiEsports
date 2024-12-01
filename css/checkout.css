@@ -139,6 +139,15 @@
     font-size: clamp(1.1rem, 1.1vw, 1.7rem);
 } 
 
+input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
 @media(max-width: 1110px) {
     .section-p1 {
         padding: 20px 10px;
@@ -159,3 +168,6 @@
         padding: 20px;
     }
 }
+
+
+

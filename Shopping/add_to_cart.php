@@ -19,5 +19,5 @@ if (isset($_POST['product_id']) && isset($_POST['quantity'])) {
 }
 
 header("Location: index.php");
-exit;
+exit();
 ?>
