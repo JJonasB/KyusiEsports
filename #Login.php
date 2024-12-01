@@ -12,14 +12,14 @@
             <div class="modal-content">
                 <span class="close" id="closeModal">&times;</span>
                 <h1><center>Login</center></h1>
-                <form id="loginForm" method= "POST" action="LoginSession.php">
+                <form method= "POST" action="LoginSession.php">
                     <label for="username">Username or Email Address:</label>
                     <input type="text" id="username" name="username" placeholder="Juan1 or Juan@example.com" required>
                     
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password"  placeholder="Yourpassword123" required>
                     
-                    <button type="submit" class="login-btn">Login</button>
+                    <button type="submit" class="login btn-primary">Login</button>
                 </form>
                 <p>Don't have an account? <a href="#" id="showSignUp">Create an account</a></p>
                 <div id="notification" style="color: red; display: none;">
