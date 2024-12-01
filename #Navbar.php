@@ -29,7 +29,6 @@
             <div class="header-main">
                 <?php
                 if (!isset($_SESSION['username'])) {
-                    echo "<a href='#' class='cartcon'> <i class='ri-shopping-cart-2-fill'> </i> Cart</a>";
                     echo "<a href='#' class='user'> <i class='ri-user-fill'> </i>Log in</a>";
                     echo "<div class='bx bx-menu' id='menu-icon'>";
                 } else {
