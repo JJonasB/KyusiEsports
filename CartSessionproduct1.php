@@ -1,7 +1,8 @@
 <?php
 include "Conn.php";
 
-$dbUsername = "Jerome";
+
+$dbUsername = $_SESSION["username"];
 $dbproduct_name = $_POST['product_name'];
 $dbquantity = $_POST['quantity'];
 $dbsize = $_POST['size'];
@@ -21,4 +22,4 @@ echo "<Script>
 
     $insertStmt->close();
     $conn->commit();
-    ?>
+?>
