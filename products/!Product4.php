@@ -39,7 +39,7 @@
                     <h4>Assorted Stickers</h4>
                     <h2>₱10</h2>
                     <input name="initial_amount" type="text" id="price" value="10" class="hidden">
-                    <select name="size" id="size">
+                    <select name="product_type" id="product_type">
                         <option value="">Select Sticker</option>
                         <option value="nana">Nana</option>
                         <option value="lucas1">Lucas-Yeah</option>
