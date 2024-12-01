@@ -1,8 +1,8 @@
 <?php
 include "Conn.php";
+session_start();
 
-
-$dbUsername = $_SESSION["Username"];
+$dbUsername = $_SESSION['username'];
 $dbproduct_name = $_POST['product_name'];
 $dbquantity = $_POST['quantity'];
 $dbsize = $_POST['size'];
@@ -18,8 +18,8 @@ $insertStmt -> execute();
 echo "<Script>
         altert(\"Registered Successfully, You can now Log In.\");
         window.location.href = '../!Shop.php';
-        </Script>";
+      </Script>";
 
     $insertStmt->close();
     $conn->commit();
-?>
+?> 
