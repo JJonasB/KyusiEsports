@@ -34,18 +34,48 @@
                  
                 <div class="single-pro-details">
                     <form id="formProduct1" action ="../functions/CartSessionproduct1.php" method="POST">                   
-                    <h6>Kyusi Esports / Sweater</h6>
-                    <input name="product_name" type="text" id="product_name" value="Kyusi Esports/ Sweater" class="hidden">
-                    <h4>Kyusi Esports's Fashion Sweaters</h4>
-                    <h2>₱100</h2>
-                    <input name="initial_amount" type="text" id="price" value="100" class="hidden">
-                    <select name="size" id="size">
-                        <option value="">Select Size</option>
-                        <option value="XL">XL</option>
-                        <option value="XXL">XXL</option>
-                        <option value="Small">Small</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Large">Large</option>
+                    <h6>Custom made / Valorant Pins</h6>
+                    <input name="product_name" type="text" id="product_name" value="Valorant Pins" class="hidden">
+                    <h4>Custom made Valorant Pins!!</h4>
+                    <h2>₱35</h2>
+                    <input name="initial_amount" type="text" id="price" value="35" class="hidden">
+                    <select name="product_type" id="product_type">
+                        <option value="">Select Button</option>
+                        <option value="Clove_>:3_pin"> Clove >:3 pin </option>
+                        <option value="Cypher_pin"> Cypher pin </option>
+                        <option value="Chamber">Chamber pin </option>
+                        <option value="Sage_peace"> Sage peace pin </option>
+                        <option value="Yoru_eat">Yoru eating pin </option>
+                        <option value="Jett_sad">Jett sad pin </option>
+                        <option value="Sage_cake">Sage holding cake pin </option>
+                        <option value="Skye">Skye holding hound pin </option>
+                        <option value="Viper_Omen">Viper holding omen </option>
+                        <option value="Clove_please">Clove please pin </option>
+                        <option value="Gekko_relieved">Gekko relieved pin </option>
+                        <option value="Omen">Omen pin </option>
+                        <option value="Fade">Fade pin </option>
+                        <option value="Clove_pixelated">Clove pixelated pin </option>
+                        <option value="Gekko_pixelated">Gekko pixelated pin </option>
+                        <option value="Phoenix_pixelated">Phoenix pixelated pin </option>
+                        <option value="Sage_pixelated">Sage pixelated pin </option>
+                        <option value="Yoru_pixelated">Yoru pixelated pin </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
+                        <option value=""> </option>
                     </select>
                     <input name="quantity" type="text" id="quantity" value="">
                     <div class="popup-container">

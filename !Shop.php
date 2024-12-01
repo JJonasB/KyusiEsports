@@ -54,7 +54,7 @@
                         </div>
                         <i class='bx bxs-cart-alt cartbox'></i>
                     </div>
-                    <div class="pro" onclick="window.location.href='product/!Product.php';">
+                    <div class="pro" onclick="window.location.href='products/!Product3.php';">
                         <img src="qceimages/thirdimage.webp" alt="">
                         <div class="des">
                             <span>Original 'to</span>

@@ -9,8 +9,6 @@ $dbquantity = $_POST['quantity'];
 $dbsize = $_POST['size'];
 $dbinitial_amount = $_POST['initial_amount'];
 
-echo $dbsize;
-
 if (empty($dbsize)) {
     $dbsize = " ";
 }
