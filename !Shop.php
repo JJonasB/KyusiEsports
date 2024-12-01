@@ -38,6 +38,54 @@
                         </div>
                         <i class='bx bxs-cart-alt cartbox'></i>
                     </div>
+                    <div class="pro" onclick="window.location.href='product/!Product.php';">
+                        <img src="qceimages/secimage.webp" alt="">
+                        <div class="des">
+                            <span>Original 'to</span>
+                            <h5>Pinakamaangas na Sweater sa QCU</h5>
+                            <div class="star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <h4>₱5 Dalawa</h4>
+                        </div>
+                        <i class='bx bxs-cart-alt cartbox'></i>
+                    </div>
+                    <div class="pro" onclick="window.location.href='product/!Product.php';">
+                        <img src="qceimages/thirdimage.webp" alt="">
+                        <div class="des">
+                            <span>Original 'to</span>
+                            <h5>Pinakamaangas na Sweater sa QCU</h5>
+                            <div class="star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <h4>₱5 Dalawa</h4>
+                        </div>
+                        <i class='bx bxs-cart-alt cartbox'></i>
+                    </div>
+                    <div class="pro" onclick="window.location.href='product/!Product.php';">
+                        <img src="qceimages/fourthimage.webp" alt="">
+                        <div class="des">
+                            <span>Original 'to</span>
+                            <h5>Pinakamaangas na Sweater sa QCU</h5>
+                            <div class="star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <h4>₱5 Dalawa</h4>
+                        </div>
+                        <i class='bx bxs-cart-alt cartbox'></i>
+                    </div>
                     <!-- <div class="pro" onclick="window.location.href='!Product.php';">
                         <img src="qceimages/secimage.webp" alt="">
                         <div class="des">
@@ -54,6 +102,8 @@
                         </div>
                         <i class='bx bxs-cart-alt cartbox'></i>
                     </div> -->
+                    
+            </section>
 
             <section id="newsletter" class="section-p1">
                 <div class="newstext">
