@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2024 at 04:17 PM
+-- Generation Time: Dec 01, 2024 at 05:53 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `cart` (
+  `ID` int(255) NOT NULL,
   `Username` varchar(25) NOT NULL,
   `product_name` varchar(255) NOT NULL,
   `product_type` varchar(255) NOT NULL,
@@ -35,17 +36,6 @@ CREATE TABLE `cart` (
   `size` varchar(255) NOT NULL,
   `initial_amount` int(180) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `cart`
---
-
-INSERT INTO `cart` (`Username`, `product_name`, `product_type`, `quantity`, `size`, `initial_amount`) VALUES
-('Jerome', 'Kyusi Esports/ Sweater', '', 0, '', 100),
-('test', 'Kyusi Esports/ Sweater', '', 43, 'XL', 100),
-('test', 'Kyusi Esports/ Sweater', '', 432, 'Medium', 100),
-('test', 'Kyusi Esports/ Sweater', '', 432, 'Medium', 100),
-('test', 'Kyusi Esports/ Tote Bag', 'Wingman', 12, '', 250);
 
 -- --------------------------------------------------------
 
@@ -120,6 +110,12 @@ CREATE TABLE `transaction` (
 --
 
 --
+-- Indexes for table `cart`
+--
+ALTER TABLE `cart`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Indexes for table `registration`
 --
 ALTER TABLE `registration`
@@ -128,6 +124,12 @@ ALTER TABLE `registration`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `cart`
+--
+ALTER TABLE `cart`
+  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `registration`
