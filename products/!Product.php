@@ -39,6 +39,7 @@
                     <h4>Kyusi Esports's Fashion Bag</h4>
                     <h2>₱250</h2>
                     <input name="initial_amount" type="text" id="price" value="250" class="hidden">
+                    <input name="size" type="text" id="size" value="" class="hidden">
                     <select name="product_type" type="text" id="product_type">
                         <option value="">Select Bag</option>
                         <option value="Wingman">Wingman</option>
