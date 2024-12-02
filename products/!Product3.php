@@ -64,18 +64,19 @@
                         <option value="Wanwan_InLove">Wanwan In Love pin </option>
                         <option value="Wanwan_Waah">Wanwan Waaaah! pin </option>
                         <option value="Wanwan_Wave">Wanwan Wave pin </option>
-                        <option value=" "> </option>
-                        <option value=""> </option>
-                        <option value=""> </option>
-                        <option value=""> </option>
-                        <option value=""> </option>
-                        <option value=""> </option>
-                        <option value=""> </option>
-                        <option value=""> </option>
-                        <option value=""> </option>
-                        <option value=""> </option>
-                        <option value=""> </option>
-                        <option value=""> </option>
+                        <option value="Zilong">Zilong Pin </option>
+                        <option value="KongMing">Kong Ming pin </option>
+                        <option value="Diaochan">Diaochan Pin</option>
+                        <option value="Biron">Biron Pin </option>
+                        <option value="HanXin_Dead">Han Xin Dead Pin </option>
+                        <option value="HanXin_Like">Han Xin Like Pin </option>
+                        <option value="Xiao Qiao">Xiao Qiao Pin </option>
+                        <option value="Ming">Ming Pin </option>
+                        <option value="LadySun">Lady Sun Pin </option>
+                        <option value="Allesio">Allesio pin </option>
+                        <option value="Arli">Arli Pin </option>
+                        <option value="SunBin">Sun Bin Pin </option>
+                        <option value="HanXin">Han Xin Pin </option>
                     </select>
                     <input name="quantity" type="text" id="quantity" value="">
                     <div class="popup-container">
@@ -87,7 +88,7 @@
                     </div>
                     </form> 
                     </div>
-                    <button class="normalbtn" id="btnbuy">Buy</button>
+                    <!-- <button class="normalbtn" id="btnbuy">Buy</button> -->
                     <h4>Product Details</h4>
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto molestiae amet eos, animi eveniet nesciunt, fuga vel distinctio similique itaque eligendi non nulla. Facere dignissimos sunt explicabo, aut amet illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis facere dolor illo inventore perferendis libero dolore rerum eveniet. Libero reprehenderit fugiat suscipit animi consequatur incidunt odio possimus! Sed, optio placeat.</span>
                 </div>
