@@ -23,7 +23,48 @@
 <body>
     <div class="wrapper">
         <!-- Header Section -->
-        <?php include "#Navbar.php" ?>
+        <?php include "#Navbar.php"; ?>
+        <?php
+            include "functions/Conn.php"; // Include database connection
+
+            $username = $_SESSION['username']; 
+
+            // Handle item deletion
+            if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete_item'])) {
+                $delete_id = $_POST['delete_id']; 
+                $delete_stmt = $conn->prepare("DELETE FROM cart WHERE ID = ? AND username = ?");
+                $delete_stmt->bind_param("is", $delete_id, $username);
+                if (!$delete_stmt->execute()) {
+                    // Handle error
+                    echo "Error deleting item: " . $conn->error;
+                }
+                $delete_stmt->close();
+                echo "<script type='text/javascript'>window.location.href = '/KyusiEsports/!Cart.php';</script>";
+                exit();
+            }
+
+            // Handle quantity update
+            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["update_quantity1"])) {
+                $updated_quantity = $_POST['updated_quantity'];
+                $updated_id = $_POST['id'];
+                $updated_stmt = $conn->prepare("UPDATE `cart` SET `quantity` = ? WHERE `cart`.`ID` = ?");
+                $updated_stmt->bind_param("ii", $updated_quantity, $updated_id);
+                if (!$updated_stmt->execute()) {
+                    // Handle error
+                    echo "Error updating quantity: " . $conn->error;
+                }
+                $updated_stmt->close();
+            }
+
+            // Fetch cart items
+            $stmt = $conn->prepare("SELECT * FROM cart WHERE username = ?");
+            $stmt->bind_param("s", $username);
+            $stmt->execute();
+            $result = $stmt->get_result();
+
+            // Initialize subtotal
+            $cartSubtotal = 0;
+        ?>
         <main>
             <section id="cartco" class="section-p1">
                 <table width="100%">
@@ -34,80 +75,44 @@
                             <td>Product</td>
                             <td>Price</td>
                             <td>Quantity</td>
-                            <td></td>
-                            <td></td>
                             <td>Subtotal</td>
                         </tr>
                     </thead>
                     <tbody>
-                    <!-- <tr>
-                        <td><a href=""><i class='bx bxs-x-circle' ></i></a></td>
-                        <td><img src="qceimages/thirdimage.webp"></td>
-                        <td>Next level na Sweater sa Kyusi Esports</td>
-                        <td>₱120</td>
-                        <td><input type="number" min="0" value="1"></td>
-                        <td>₱120</td>
-                    </tr> -->
-                        
                     <?php
-                    include "functions/Conn.php";
-                    $username = $_SESSION['username']; // Get the username from session
+                        while ($row = $result->fetch_assoc()) {
+                            $subtotal = $row['initial_amount'] * $row['quantity'];
+                            $cartSubtotal += $subtotal; // Add to the cart subtotal
 
-                    // Handle form submission for item deletion
-                    if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete_item'])) {
-                        $delete_id = $_POST['delete_id']; // Get the ID of the item to delete
+                            echo "<tr>";
+                            
+                            // Delete form
+                            echo "<td>
+                                    <form method='POST' action=''>
+                                        <input type='hidden' name='delete_id' value='" . htmlspecialchars($row['ID']) . "'>
+                                        <button type='submit' name='delete_item' style='border: none; background: none; cursor: pointer;'>
+                                            <i class='bx bxs-x-circle'></i>
+                                        </button>
+                                    </form>
+                                  </td>"; 
+                            
+                            echo "<td><img src='qceimages/firstimage.webp'></td>"; 
+                            echo "<td>" . htmlspecialchars($row['product_name']) . "</td>";
+                            echo "<td>₱" . htmlspecialchars($row['initial_amount']) . "</td>"; 
 
-                        // Prepare the SQL statement to delete the item
-                        $delete_stmt = $conn->prepare("DELETE FROM cart WHERE ID = ? AND username = ?");
-                        $delete_stmt->bind_param("is", $delete_id, $username);
-                        $delete_stmt->execute();
-                        $delete_stmt->close();
+                            // Update form
+                            echo "<td>
+                                    <form method='POST' action=''>
+                                        <input type='number' name='updated_quantity' min='0' value='" . htmlspecialchars($row['quantity']) . "'>
+                                        <input type='hidden' name='id' value='" . htmlspecialchars($row['ID']) . "'>
+                                        <button type='submit' name='update_quantity1'>Update</button>
+                                    </form>
+                                  </td>"; 
+                            echo "<td>₱" . number_format($subtotal, 2) . "</td>"; // Display item subtotal
+                            echo "</tr>";
+                        }
 
-                        // Optionally, refresh the page to show updated cart
-                        echo "<script type='text/javascript'>
-                                window.location.href = '/KyusiEsports/!Cart.php';
-                            </script>";
-                        exit();
-                    }
-
-                    $stmt = $conn->prepare("SELECT * FROM cart WHERE username = ?");
-                    $stmt->bind_param("s", $username); // Bind the parameter
-                    $stmt->execute();
-                    $result = $stmt->get_result();
-
-                    // Initialize subtotal
-                    $cartSubtotal = 0;
-
-                    while ($row = $result->fetch_assoc()) {
-                        $subtotal = $row['initial_amount'] * $row['quantity'];
-                        $cartSubtotal += $subtotal; // Add to the cart subtotal
-
-                        echo "<tr>";
-                        
-                        // Delete form
-                        echo "<td>
-                                <form method='POST' action=''>
-                                    <input type='hidden' name='delete_id' value='" . htmlspecialchars($row['ID']) . "'>
-                                    <button type='submit' name=' delete_item' style='border: none; background: none; cursor: pointer;'>
-                                        <i class='bx bxs-x-circle'></i>
-                                    </button>
-                                </form>
-                            </td>"; 
-                        
-                        echo "<td><img src='qceimages/firstimage.webp'></td>"; 
-                        echo "<td>" . htmlspecialchars($row['product_name']) . "</td>";
-                        echo "<td>₱" . htmlspecialchars($row['initial_amount']) . "</td>"; 
-
-                        echo "<form method='POST' action=''>";
-                        echo "<td><input type='number' name='quantity' min='0' value='" . htmlspecialchars($row['quantity']) . "'></td>";
-                        echo "<td><input type='hidden' name='id' value='" . htmlspecialchars($row['ID']) . "'></td>"; 
-                        echo "<td><button type='submit' name='update_quantity'>Update</button></td>"; 
-                        echo "<td>₱" . number_format($subtotal, 2) . "</td>"; // Display item subtotal
-                        echo "</form>";
-                        echo "</tr>";
-                    }
-
-                    $stmt->close();
+                        $stmt->close();
                     ?>
                     </tbody>
                 </table>
@@ -122,7 +127,7 @@
                     </div>
                 </div>
 
- <div id="subtotal">
+                <div id="subtotal">
                     <h3>Cart Totals</h3>
                     <table>
                         <tr>
@@ -144,9 +149,9 @@
         </main>
 
         <!-- Footer Section -->
-        <?php include "#footer.php" ?>
+        <?php include "#footer.php"; ?>
 
-        <script src="javascript/checkout.js"></script>
+        <script src="javascript/QCE.js"></script>
     </div>
 </body>
 </html>
