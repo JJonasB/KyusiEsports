@@ -46,10 +46,18 @@
                                                                                             font-family: Oswald;">RE</span>US</p>
                     
                     <p class="baba-ng-astreus">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec felis quam, convallis ac rutrum eget, hendrerit ut sapien. 
-                        Phasellus vulputate justo in quam dignissim, in auctor lorem semper. 
-                        Vivamus condimentum porta nisl in tristique. Praesent vitae sagittis ante.
+                    <h3><?php 
+                            include "functions/conn.php";
+            $sql = "SELECT Text FROM adminedit ORDER BY ID DESC LIMIT 1"; // Adjust according to your ID column
+                            $result = $conn->query($sql);
+    
+                                if ($result && $row = $result->fetch_assoc()) {
+                                        $latestMessage = htmlspecialchars($row['Text']); 
+                                    } else {
+                                        $latestMessage = "No messages found."; 
+                    }
+                    ?></h3> 
+                    <!-- Get the text from the latest id of text. -->
                     </p>
                     </div>
                 </div>
