@@ -40,7 +40,7 @@
                     <h2>₱250</h2>
                     <input name="initial_amount" type="text" id="price" value="250" class="hidden">
                     <input name="size" type="text" id="size" value="" class="hidden">
-                    <input name="productImage" type="text" value=""> <!-- Di pa magagawa hangat nakatemplate palang -->
+                    <input name="productImage" type="text" value="" class="hidden"> <!-- Di pa magagawa hangat nakatemplate palang -->
                     <select name="product_type" type="text" id="product_type">
                         <option value="">Select Bag</option>
                         <option value="Wingman">Wingman</option>
