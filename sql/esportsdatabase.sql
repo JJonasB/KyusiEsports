@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2024 at 05:53 PM
+-- Generation Time: Dec 03, 2024 at 02:34 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -34,8 +34,19 @@ CREATE TABLE `cart` (
   `product_type` varchar(255) NOT NULL,
   `quantity` int(180) NOT NULL,
   `size` varchar(255) NOT NULL,
-  `initial_amount` int(180) NOT NULL
+  `initial_amount` int(180) NOT NULL,
+  `product_pic` longblob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`ID`, `Username`, `product_name`, `product_type`, `quantity`, `size`, `initial_amount`, `product_pic`) VALUES
+(13, 'Radiuss', 'Valorant Pins', 'Clove_pixelated', 30, ' ', 35, ''),
+(14, 'Radiuss', 'Kyusi Esports/ ID Lace', ' ', 432, ' ', 50, ''),
+(15, 'test', 'Kyusi Esports/ Tote Bag', 'Adawong2', 4, ' ', 250, ''),
+(16, 'test', 'Kyusi Esports/ Stickers', 'Omen', 4, ' ', 10, '');
 
 -- --------------------------------------------------------
 
@@ -129,7 +140,7 @@ ALTER TABLE `registration`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `registration`

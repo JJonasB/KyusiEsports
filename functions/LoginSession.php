@@ -5,6 +5,7 @@ session_start();
 $dbUser = $_POST["username"];
 $dbPass = $_POST["password"];
 
+
 $sql = "SELECT * From registration WHERE username = ? OR email = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("ss",$dbUser, $dbUser);
@@ -22,6 +23,7 @@ if ($user) {
     if ($dbPass == $user['password']) {
         echo "Password Match!";
         $_SESSION['username'] = htmlspecialchars($user['Username']);
+        $_SESSION['isAdmin'] = htmlspecialchars($user['isAdmin']);
         header("Location: ../index.php");
         exit();
     } else {
