@@ -1,0 +1,68 @@
+body {
+    font-family: 'Zuume', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #222327;
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.confirmation {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.order-summary {
+    margin-bottom: 30px;
+}
+
+.order-summary table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-summary th, .order-summary td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+}
+
+.order-summary tfoot td {
+    font-weight: bold;
+}
+
+.actions {
+    text-align: center;
+}
+
+.normalbtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fd3029;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.normalbtn:hover {
+    background-color: #e02e27;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}

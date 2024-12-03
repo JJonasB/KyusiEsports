@@ -18,6 +18,9 @@
             width: 70px;
             padding: 10px 5px 10px 15px;
         }
+        a {
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -137,7 +140,7 @@
                             <td><strong>₱<?php echo number_format($cartSubtotal, 2); ?></strong></td>
                         </tr>
                     </table>
-                    <button class="normalbtn">Proceed to Checkout</button>
+                    <button class="normalbtn"><a href="Modeofpayment.php">Proceed to Checkout</a></button>
                 </div>
             </section>
         </main>
