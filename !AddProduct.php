@@ -13,6 +13,11 @@
 <div class="wrapper1">
     <!-- Header Section -->
     <?php include "#Navbar.php"; ?>
+    <?php 
+        if (isset($_SESSION["username"]) && !$_SESSION["isAdmin"]) {
+            echo "<script> window.location.href = '/KyusiEsports/index.php';</script>";
+        }
+    ?>
 
     <!-- Main Body Section -->
     <main>

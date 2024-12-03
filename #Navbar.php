@@ -31,6 +31,12 @@
                 if (!isset($_SESSION['username'])) {
                     echo "<a href='#' class='user'> <i class='ri-user-fill'> </i>Log in</a>";
                     echo "<div class='bx bx-menu' id='menu-icon'>";
+                } else if (isset($_SESSION["username"]) && $_SESSION["isAdmin"]) {
+                    echo "<a href='/KyusiEsports/!Cart.php' class='cartcon'> <i class='ri-shopping-cart-2-fill'> </i> Cart</a>";
+                    echo "<a href='#' class=''> <i class='ri-user-fill'> </i>". htmlspecialchars($_SESSION['username'])."</a>";
+                    echo "<a href='!AddProduct.php' class=''>Add product</a>";
+                    echo "<a href='/KyusiEsports/functions/Log-out.php' class=''> </i>Logout</a>";
+                    echo "<div class='bx bx-menu' id='menu-icon'>";
                 } else {
                     echo "<a href='/KyusiEsports/!Cart.php' class='cartcon'> <i class='ri-shopping-cart-2-fill'> </i> Cart</a>";
                     echo "<a href='#' class=''> <i class='ri-user-fill'> </i>". htmlspecialchars($_SESSION['username'])."</a>";
