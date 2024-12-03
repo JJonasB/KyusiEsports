@@ -50,8 +50,7 @@
 
             <h2 class="sponsors-title">ADMIN MESSAGE</h2>
             <center>
-                <h1><?php echo $message; ?></h1>
-                <h3><?php echo isset($_SESSION['newsText']) ? htmlspecialchars($_SESSION['newsText']) : ''; ?></h3> <!-- Display session message -->
+                <h3>Current Message: <br><?php echo isset($_SESSION['newsText']) ? htmlspecialchars($_SESSION['newsText']) : ''; ?></h3> <!-- Display session message -->
             </center>
 
             <form action="" method="post">
