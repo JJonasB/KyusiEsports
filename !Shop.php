@@ -9,7 +9,7 @@
 <body>
     <div class="wrapper">
         <!-- Header Section ito-->
-        <?php include "#Navbar.php"; ?>
+        <?php include "#Navbar.php";?>
 
         <!-- Main Section ito-->
         <main>
@@ -23,10 +23,10 @@
                 <p>Kyusi Esports Cool Modern Designs</p>
                 <div class="pro-container">
                     <div class="pro" onclick="window.location.href='products/!Product.php';">
-                        <img src="qceimages/firstimage.webp" alt="">
+                        <img src="qceimages/ShopDisplays/Tote Bag.png" alt="">
                         <div class="des">
-                            <span>Original 'to</span>
-                            <h5>Pinakamaangas na Sweater sa QCU</h5>
+                            <span>Original Design</span>
+                            <h5>Assorted Tote Bags</h5>
                             <div class="star">
                                 <i class="ri-star-fill"></i>
                                 <i class="ri-star-fill"></i>
@@ -39,10 +39,10 @@
                         <i class='bx bxs-cart-alt cartbox'></i>
                     </div>
                     <div class="pro" onclick="window.location.href='products/!Product2.php';">
-                        <img src="qceimages/secimage.webp" alt="">
+                        <img src="qceimages/ShopDisplays/Id Lace.png" alt="">
                         <div class="des">
-                            <span>Original din 'to</span>
-                            <h5>Napakaangas na ID Lace ng Kyusi Esports</h5>
+                            <span>Original Design</span>
+                            <h5>Kyusi Esports ID Lace</h5>
                             <div class="star">
                                 <i class="ri-star-fill"></i>
                                 <i class="ri-star-fill"></i>
@@ -55,10 +55,10 @@
                         <i class='bx bxs-cart-alt cartbox'></i>
                     </div>
                     <div class="pro" onclick="window.location.href='products/!Product3.php';">
-                        <img src="qceimages/thirdimage.webp" alt="">
+                        <img src="qceimages/ShopDisplays/Pin.png" alt="">
                         <div class="des">
-                            <span>Refurbished lang to</span>
-                            <h5>Pinakamaangas na Sweater sa QCU</h5>
+                            <span>Hand Drawn</span>
+                            <h5>Assorted Pins</h5>
                             <div class="star">
                                 <i class="ri-star-fill"></i>
                                 <i class="ri-star-fill"></i>
@@ -71,10 +71,10 @@
                         <i class='bx bxs-cart-alt cartbox'></i>
                     </div>
                     <div class="pro" onclick="window.location.href='products/!Product4.php';">
-                        <img src="qceimages/fourthimage.webp" alt="">
+                        <img src="qceimages/ShopDisplays/Sticker.png" alt="">
                         <div class="des">
-                            <span>Eto hindi Original</span>
-                            <h5>Assorted stickers!</h5>
+                            <span>Hand Drawn</span>
+                            <h5>Assorted Stickers</h5>
                             <div class="star">
                                 <i class="ri-star-fill"></i>
                                 <i class="ri-star-fill"></i>
