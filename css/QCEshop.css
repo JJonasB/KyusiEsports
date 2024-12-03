@@ -2,7 +2,7 @@
 
 
 #page-header {
-    background-image: url(../qceimages/b1.jpg);
+    background-image: url(../qceimages/ShopDisplays/b1.jpg);
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -71,7 +71,7 @@
 }
 
 #product1 .pro .des {
-    text-align: start;
+    text-align: match-parent;
     padding: 10px 0;
 }
 

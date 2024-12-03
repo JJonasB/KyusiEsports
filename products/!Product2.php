@@ -13,25 +13,24 @@
         <!-- Main Section ito-->
         <main>
             <section id="prodetails" class="section-p1">
-                <div class="single-pro-image">
-                    <img src="../qceimages/firstimage.webp" width="100%" id="MainImg">
+                <div class="single-pro-image" >
+                <img src="../qceimages/ShopDisplays/Lace Design 1.png" width="100%" id="MainImg">
                 
-                    <div class="small-img-group">
-                        <div class ="small-img-col">
-                            <img src="../qceimages/firstimage.webp" width="100%" class="small-img">
-                        </div>
-                        <div class ="small-img-col">
-                            <img src="../qceimages/secimage.webp" width="100%" class="small-img">
-                        </div>
-                        <div class ="small-img-col">
-                            <img src="../qceimages/thirdimage.webp" width="100%" class="small-img">
-                        </div>
-                        <div class ="small-img-col">
-                            <img src="../qceimages/fourthimage.webp" width="100%" class="small-img">
-                        </div>
+                <div class="small-img-group">
+                    <div class ="small-img-col">
+                        <img src="../qceimages/ShopDisplays/Lace Design 1.png" width="100%" class="small-img">
+                    </div>
+                    <div class ="small-img-col">
+                        <img src="../qceimages/ShopDisplays/Lace Design 2.png" width="100%" class="small-img">
+                    </div>
+                    <div class ="small-img-col">
+                        <img src="../qceimages/ShopDisplays/Lace Model1.png" width="100%" class="small-img">
+                    </div>
+                    <div class ="small-img-col">
+                        <img src="../qceimages/ShopDisplays/Lace Model2.png" width="100%" class="small-img">
                     </div>
                 </div>
-                 
+            </div>
                 <div class="single-pro-details">
                     <form id="formProduct1" action ="../functions/CartSessionproduct1.php" method="POST">                   
                     <h6>Kyusi Esports / ID Lace</h6>
