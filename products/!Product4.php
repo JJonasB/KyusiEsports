@@ -14,20 +14,77 @@
         <main>
             <section id="prodetails" class="section-p1">
                 <div class="single-pro-image">
-                    <img src="../qceimages/ShopDisplays/Sticker.png" width="100%" id="MainImg">
+                    <img src="../qceimages/ShopDisplays/Stickers/Sticker.png" width="100%" id="MainImg">
                 
                     <div class="small-img-group">
                         <div class ="small-img-col">
-                            <img src="" width="100%" class="small-img">
+                            <img src="../qceimages/ShopDisplays/Stickers/Sticker.png" width="100%" class="small-img">
                         </div>
                         <div class ="small-img-col">
-                            <img src="" width="100%" class="small-img">
+                            <img src="../qceimages/ShopDisplays/Stickers/Vi.png" width="100%" class="small-img">
                         </div>
                         <div class ="small-img-col">
-                            <img src="" width="100%" class="small-img">
+                            <img src="../qceimages/ShopDisplays/Stickers/VIKTOR_.png" width="100%" class="small-img">
                         </div>
                         <div class ="small-img-col">
-                            <img src="" width="100%" class="small-img">
+                            <img src="../qceimages/ShopDisplays/Stickers/MEL.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/CAIT.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/JAYCE_.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/JINX.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/JettSticker.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/CloveSticker.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/KazuyaSticket.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/LarsSticker.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/OmenSticker.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/CICI STICKER 1.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/CICI STICKER 2.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/CICI STICKER 3.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/CICI STICKER 4.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/CICI STICKER 5.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/CICI STICKER 6.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/LUKAS STICKER 1.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/LUKAS STICKER 2.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/LUKAS STICKER 3.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/LUKAS STICKER 4.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Stickers/LUKAS STICKER 5.png" width="100%" class="small-img">
                         </div>
                     </div>
                 </div>
@@ -59,6 +116,12 @@
                         <option value="Lars">Lars Sticker</option>
                         <option value="Kazuya">Kazuya Sticker</option>
                         <option value="Alisa">Alisa Sticker</option>
+                        <option value="Mel">Mel Sticker</option>
+                        <option value="Viktor">Viktor Sticker</option>
+                        <option value="Vi">Vi Sticker</option>
+                        <option value="Jayce">Jayce Sticker</option>
+                        <option value="Jinx">Jinx Sticker</option>
+                        <option value="Cait">Cait Sticker</option>
                     </select>
                     <input name="quantity" type="text" id="quantity" value="">
                     <div class="popup-container">

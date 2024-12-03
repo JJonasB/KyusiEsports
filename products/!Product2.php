@@ -14,20 +14,20 @@
         <main>
             <section id="prodetails" class="section-p1">
                 <div class="single-pro-image" >
-                <img src="../qceimages/ShopDisplays/Lace Design 1.png" width="100%" id="MainImg">
+                <img src="../qceimages/ShopDisplays/Lace/Lace Sample 1.png" width="100%" id="MainImg">
                 
                 <div class="small-img-group">
                     <div class ="small-img-col">
-                        <img src="../qceimages/ShopDisplays/Lace Design 1.png" width="100%" class="small-img">
+                        <img src="../qceimages/ShopDisplays/Lace/Lace Sample 1.png" width="100%" class="small-img">
                     </div>
                     <div class ="small-img-col">
-                        <img src="../qceimages/ShopDisplays/Lace Design 2.png" width="100%" class="small-img">
+                        <img src="../qceimages/ShopDisplays/Lace/Lace Sample 2.png" width="100%" class="small-img">
                     </div>
                     <div class ="small-img-col">
-                        <img src="../qceimages/ShopDisplays/Lace Model1.png" width="100%" class="small-img">
+                        <img src="../qceimages/ShopDisplays/Lace/Lace Model1.png" width="100%" class="small-img">
                     </div>
                     <div class ="small-img-col">
-                        <img src="../qceimages/ShopDisplays/Lace Model2.png" width="100%" class="small-img">
+                        <img src="../qceimages/ShopDisplays/Lace/Lace Model2.png" width="100%" class="small-img">
                     </div>
                 </div>
             </div>

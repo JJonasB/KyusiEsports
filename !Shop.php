@@ -23,7 +23,7 @@
                 <p>Kyusi Esports Cool Modern Designs</p>
                 <div class="pro-container">
                     <div class="pro" onclick="window.location.href='products/!Product.php';">
-                        <img src="qceimages/ShopDisplays/Tote Bag.png" alt="">
+                        <img src="qceimages/ShopDisplays/Tote Bag/Tote Bag.png" alt="">
                         <div class="des">
                             <span>Original Design</span>
                             <h5>Assorted Tote Bags</h5>
@@ -39,7 +39,7 @@
                         <i class='bx bxs-cart-alt cartbox'></i>
                     </div>
                     <div class="pro" onclick="window.location.href='products/!Product2.php';">
-                        <img src="qceimages/ShopDisplays/Id Lace.png" alt="">
+                        <img src="qceimages/ShopDisplays/Lace/Id Lace.png" alt="">
                         <div class="des">
                             <span>Original Design</span>
                             <h5>Kyusi Esports ID Lace</h5>
@@ -55,7 +55,7 @@
                         <i class='bx bxs-cart-alt cartbox'></i>
                     </div>
                     <div class="pro" onclick="window.location.href='products/!Product3.php';">
-                        <img src="qceimages/ShopDisplays/Pin.png" alt="">
+                        <img src="qceimages/ShopDisplays/Pins/Pin.png" alt="">
                         <div class="des">
                             <span>Hand Drawn</span>
                             <h5>Assorted Pins</h5>
@@ -71,7 +71,7 @@
                         <i class='bx bxs-cart-alt cartbox'></i>
                     </div>
                     <div class="pro" onclick="window.location.href='products/!Product4.php';">
-                        <img src="qceimages/ShopDisplays/Sticker.png" alt="">
+                        <img src="qceimages/ShopDisplays/Stickers/Sticker.png" alt="">
                         <div class="des">
                             <span>Hand Drawn</span>
                             <h5>Assorted Stickers</h5>

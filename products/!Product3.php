@@ -14,20 +14,122 @@
         <main>
             <section id="prodetails" class="section-p1">
                 <div class="single-pro-image">
-                    <img src="../qceimages/ShopDisplays/Pin.png" width="100%" id="MainImg">
+                    <img src="../qceimages/ShopDisplays/Pins/Pin.png" width="100%" id="MainImg">
                 
                     <div class="small-img-group">
                         <div class ="small-img-col">
-                            <img src="" width="100%" class="small-img">
+                            <img src="../qceimages/ShopDisplays/Pins/ClovePin.png" width="100%" class="small-img">
                         </div>
                         <div class ="small-img-col">
-                            <img src="" width="100%" class="small-img">
+                            <img src="../qceimages/ShopDisplays/Pins/GEKKO BP.png" width="100%" class="small-img">
                         </div>
                         <div class ="small-img-col">
-                            <img src="" width="100%" class="small-img">
+                            <img src="../qceimages/ShopDisplays/Pins/CLOVE BP.png" width="100%" class="small-img">
                         </div>
                         <div class ="small-img-col">
-                            <img src="" width="100%" class="small-img">
+                            <img src="../qceimages/ShopDisplays/Pins/KILLJOY BP.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/OMEN BP.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/PHOENIX BP.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/SAGE BP .png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/YORU BP.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/WANWAN PINS DESIGN 1 (ML).png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/WANWAN PINS DESIGN 2 (ML).png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/WANWAN PINS DESIGN 3 (ML).png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/WANWAN PINS DESIGN 4 (ML).png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/WANWAN PINS DESIGN 5 (ML).png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/HOK CHIBI PIN 1.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/HOK CHIBI PIN 2.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/HOK CHIBI PIN 3.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/HOK CHIBI PIN 4.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/HOK CHIBI PIN 5.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/HOK CHIBI PIN 6.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/HOK CHIBI PIN 7.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/HOK CHIBI PIN 8.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/HOK CHIBI PIN 9.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/HOK CHIBI PIN 10.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/HOK CHIBI PIN 11.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/HOK CHIBI PIN 12.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/HOK CHIBI PIN 13.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/BUTTON PINS DESIGN 1.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/BUTTON PINS DESIGN 2.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/BUTTON PINS DESIGN 3.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/BUTTON PINS DESIGN 4.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/BUTTON PINS DESIGN 5.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/BUTTON PINS DESIGN 6.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/BUTTON PINS DESIGN 7.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/BUTTON PINS DESIGN 8.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/BUTTON PINS DESIGN 9.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/BUTTON PINS DESIGN 10.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/BUTTON PINS DESIGN 11.png" width="100%" class="small-img">
+                        </div>
+                        <div class ="small-img-col">
+                            <img src="../qceimages/ShopDisplays/Pins/BUTTON PINS DESIGN 12.png" width="100%" class="small-img">
                         </div>
                     </div>
                 </div>
@@ -36,7 +138,7 @@
                     <form id="formProduct1" action ="../functions/CartSessionproduct1.php" method="POST">                   
                     <h6>Custom made / Valorant Pins</h6>
                     <input name="product_name" type="text" id="product_name" value="Valorant Pins" class="hidden">
-                    <h4>Custom made Valorant Pins!!</h4>
+                    <h4>Custom made Valorant Pins</h4>
                     <h2>₱35</h2>
                     <input name="initial_amount" type="text" id="price" value="35" class="hidden">
                     <select name="product_type" id="product_type">

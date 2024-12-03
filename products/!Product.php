@@ -14,38 +14,38 @@
         <main>
             <section id="prodetails" class="section-p1">
                 <div class="single-pro-image">
-                    <img src="../qceimages/ShopDisplays/Tote Bag.png" width="100%" id="MainImg">
+                    <img src="../qceimages/ShopDisplays/Tote Bag/Tote Bag.png" width="100%" id="MainImg">
                 
                 <div class="small-img-group">
                     <div class ="small-img-col">
-                        <img src="../qceimages/ShopDisplays/Tote Bag.png" width="100%" class="small-img">
+                        <img src="../qceimages/ShopDisplays/Tote Bag/Tote Bag.png" width="100%" class="small-img">
                     </div>
                     <div class ="small-img-col">
-                        <img src="../qceimages/ShopDisplays/Bag Design 1.png" width="100%" class="small-img">
+                        <img src="../qceimages/ShopDisplays/Tote Bag/Bag Design 1.png" width="100%" class="small-img">
                     </div>
                     <div class ="small-img-col">
-                        <img src="../qceimages/ShopDisplays/Bag Design 2.png" width="100%" class="small-img">
+                        <img src="../qceimages/ShopDisplays/Tote Bag/Bag Design 2.png" width="100%" class="small-img">
                     </div>
                     <div class ="small-img-col">
-                        <img src="../qceimages/ShopDisplays/Bag Design 3.png" width="100%" class="small-img">
+                        <img src="../qceimages/ShopDisplays/Tote Bag/Bag Design 3.png" width="100%" class="small-img">
                     </div>
                     <div class ="small-img-col">
-                        <img src="../qceimages/ShopDisplays/Bag Design 4.png" width="100%" class="small-img">
+                        <img src="../qceimages/ShopDisplays/Tote Bag/Bag Design 4.png" width="100%" class="small-img">
                     </div>
                     <div class ="small-img-col">
-                        <img src="../qceimages/ShopDisplays/Bag Design 5.png" width="100%" class="small-img">
+                        <img src="../qceimages/ShopDisplays/Tote Bag/Bag Design 5.png" width="100%" class="small-img">
                     </div>
                     <div class ="small-img-col">
-                        <img src="../qceimages/ShopDisplays/Bag Design 6.png" width="100%" class="small-img">
+                        <img src="../qceimages/ShopDisplays/Tote Bag/Bag Design 6.png" width="100%" class="small-img">
                     </div>
                     <div class ="small-img-col">
-                        <img src="../qceimages/ShopDisplays/Bag Design 7.png" width="100%" class="small-img">
+                        <img src="../qceimages/ShopDisplays/Tote Bag/Bag Design 7.png" width="100%" class="small-img">
                     </div>
                     <div class ="small-img-col">
-                        <img src="../qceimages/ShopDisplays/Bag Design 8.png" width="100%" class="small-img">
+                        <img src="../qceimages/ShopDisplays/Tote Bag/Bag Design 8.png" width="100%" class="small-img">
                     </div>
                     <div class ="small-img-col">
-                        <img src="../qceimages/ShopDisplays/Bag Design 9.png" width="100%" class="small-img">
+                        <img src="../qceimages/ShopDisplays/Tote Bag/Bag Design 9.png" width="100%" class="small-img">
                     </div>
                 </div>
             </div>
