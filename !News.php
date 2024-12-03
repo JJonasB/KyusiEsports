@@ -11,7 +11,7 @@
 <body>
     <?php 
         include "functions/conn.php";
-        $sql = "SELECT Text FROM adminedit ORDER BY ID DESC LIMIT 1"; // Adjust according to your ID column
+        $sql = "SELECT Text FROM adminedit ORDER BY ID DESC LIMIT 1"; 
         $result = $conn->query($sql);
         
         if ($result && $row = $result->fetch_assoc()) {

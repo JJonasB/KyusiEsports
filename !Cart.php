@@ -29,13 +29,11 @@
 
             $username = $_SESSION['username']; 
 
-            // Handle item deletion
             if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete_item'])) {
                 $delete_id = $_POST['delete_id']; 
                 $delete_stmt = $conn->prepare("DELETE FROM cart WHERE ID = ? AND username = ?");
                 $delete_stmt->bind_param("is", $delete_id, $username);
                 if (!$delete_stmt->execute()) {
-                    // Handle error
                     echo "Error deleting item: " . $conn->error;
                 }
                 $delete_stmt->close();
@@ -43,26 +41,22 @@
                 exit();
             }
 
-            // Handle quantity update
             if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["update_quantity1"])) {
                 $updated_quantity = $_POST['updated_quantity'];
                 $updated_id = $_POST['id'];
                 $updated_stmt = $conn->prepare("UPDATE `cart` SET `quantity` = ? WHERE `cart`.`ID` = ?");
                 $updated_stmt->bind_param("ii", $updated_quantity, $updated_id);
                 if (!$updated_stmt->execute()) {
-                    // Handle error
                     echo "Error updating quantity: " . $conn->error;
                 }
                 $updated_stmt->close();
             }
 
-            // Fetch cart items
             $stmt = $conn->prepare("SELECT * FROM cart WHERE username = ?");
             $stmt->bind_param("s", $username);
             $stmt->execute();
             $result = $stmt->get_result();
 
-            // Initialize subtotal
             $cartSubtotal = 0;
         ?>
         <main>
@@ -108,7 +102,7 @@
                                         <button type='submit' name='update_quantity1'>Update</button>
                                     </form>
                                   </td>"; 
-                            echo "<td>₱" . number_format($subtotal, 2) . "</td>"; // Display item subtotal
+                            echo "<td>₱" . number_format($subtotal, 2) . "</td>"; 
                             echo "</tr>";
                         }
 

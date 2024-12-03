@@ -150,6 +150,9 @@ ALTER TABLE `cart`
 --
 ALTER TABLE `registration`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+
+INSERT INTO `registration` (`ID`, `Username`, `firstName`, `middleName`, `lastName`, `studentNumber`, `dateOfBirth`, `address`, `contactNumber`, `course`, `section`, `email`, `password`, `isAdmin`) VALUES (NULL, 'AdminKyusi', '', NULL, '', '', '', '', '', '', '', '', '$*kEsports#%', '1')
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

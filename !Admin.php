@@ -15,31 +15,29 @@
 
         <!-- Main Section -->
         <?php 
-            $message = ""; // Initialize message variable
-            $viewMessage = ""; // Initialize viewMessage variable
+            $message = "";
+            $viewMessage = ""; 
 
             if(isset($_POST["submit"])){
                 include "functions/Conn.php";
 
-                // Get the text input
                 $text = $_POST['text'];
 
-                // Insert the text into the database
                 $sql = "INSERT INTO adminedit (Text) VALUES (?)";
                 $stmt = $conn->prepare($sql);
                 $stmt->bind_param("s", $text);
 
                 if ($stmt->execute()) {
                     $message = "Message submitted successfully!";
-                    $_SESSION["newsText"] = htmlspecialchars($text); // Store the submitted text in session
+                    $_SESSION["newsText"] = htmlspecialchars($text); 
                 } else {
                     $message = "Error: " . $stmt->error;
                 }
 
                 $stmt->close();
 
-                // Retrieve the last inserted message to display
-                $sql = "SELECT Text FROM adminedit ORDER BY ID DESC LIMIT 1"; // Adjust according to your ID column
+
+                $sql = "SELECT Text FROM adminedit ORDER BY ID DESC LIMIT 1"; 
                 $result = $conn->query($sql);
                 if ($result && $row = $result->fetch_assoc()) {
                     $viewMessage = htmlspecialchars($row['Text']);
