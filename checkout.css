@@ -1,0 +1,542 @@
+@font-face {
+    src: url(qcefonts/Zuume\ Regular.ttf);
+    font-family: Zuume;
+}
+
+@font-face {
+    src: url(qcefonts/Zuume\ ExtraLight.ttf);
+    font-family: ZuumeEL;
+}
+
+@font-face {
+    src: url(qcefonts/Zuume\ Light.ttf);
+    font-family: ZuumeL;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Zuume', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --bg-color: #222327;
+    --text-color: #fff;
+    --main-color: #fd3029;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--bg-color);
+    background-color: #1a1a1a;
+    color: var(--text-color);
+    line-height: 1.5;
+    padding-top: 80px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 20px 10%;
+    transition: all 0.5s ease;
+    border-bottom: 1px solid gray;
+    background-color: #222327;
+}
+
+header span {
+    font-style: italic;
+    font-family: 'Zuume';
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.kyusilogo {
+    font-size: 28px;
+    margin-right: 3px;
+    width: 50px;
+    height: auto;
+}
+
+.logo span {
+    color: var(--text-color);
+    font-size: clamp( 1.5rem, 1.5vw, 2rem);
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: clamp(1.3rem, 1.1vw, 1.5rem);
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 20px;
+    transition: all 0.5s ease;
+}
+
+.navbar li a:hover, 
+.navbar li a.active {
+    color: var(--main-color);
+}
+
+.navbar li a.active::after, 
+.navbar li a:hover::after {
+    content: "";
+    width: 25%;
+    height: 2px;
+    background: #fd3029;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+.header-main {
+    display: flex;
+    align-items: center;
+}
+
+.header-main a {
+    margin-right: 15px;
+    margin-left: 5px;
+    color: var(--text-color);
+    font-size: clamp(1.3rem, 1.2vw, 1.5rem);
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin: 2px;
+}
+
+.user i {
+    color: var(--main-color);
+    font-size: 25px;
+    margin-right: 7px;
+}
+
+.cartcon {
+    display: flex;
+    align-items: center;
+}
+
+.cartcon i {
+    color: var(--main-color);
+    font-size: 25px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.header-main a:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 30px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+#menu-icon.bx-x {
+    color: var(--main-color);
+}
+
+@media (max-width: 1351px) {
+    header {
+        padding: 14px 2%;
+    }
+    .navbar a {
+        margin: 0px 15px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .navbar a {
+        margin: 0px 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -270px;
+        width: 270px;
+        height: auto;
+        background: #fd3029;
+        flex-direction: column;
+        padding: 20px 0;
+        border-radius: 10px;
+        transition: right 0.5s ease;
+        overflow-y: auto;
+    }
+    .navbar.open {
+        right: 2%;
+    }
+    .navbar a {
+        color: var(--text-color);
+        margin: 12px 0;
+        padding: 0px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kyusilogo {
+        width: 35px;
+    }
+
+    body {
+        padding-top: 80px;
+    }
+
+}
+
+@media (max-width: 380px) {
+    header {
+        padding: 10px 5%;
+        flex-wrap: wrap;
+    }
+
+    body {
+        padding-top: 90px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        right: -570px;
+        width: 100%;
+        background: var(--main-color);
+        transition: right 0.5s ease;
+        padding: 20px 0;
+        z-index: 999;
+    }
+    .navbar.open {
+        right: 0;
+    }
+    .navbar a {
+        margin: 8px 0;
+        padding: 10px 15px;
+    }
+    .kyusilogo {
+        width: 27px;
+    }
+    .header-main {
+        flex: 1;
+    }
+
+    #menu-icon {
+        display: block;
+        font-size: 28px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .navbar a {
+        padding: 8px 10px;
+    }
+    .logo {
+        margin-right: auto;
+    }
+}
+
+/* Footer Kyusi Esports */
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    width: 100%;
+    background-color: #24262b;
+    padding: 50px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: clamp(1.2rem, 1.2vw, 1.6rem);
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #fd3029;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: clamp(1.1rem, 1.2vw, 1.7rem);
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #fd3029;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #fd3029;
+    background-color: #fff;
+}
+
+/* Responsive */
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+
+    .footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Main Content */
+.section-p1 {
+    padding: 40px 80px;
+}
+
+/*Cart Page*/
+
+#cartco {
+    overflow-x: auto;
+}
+
+#cartco table{
+    background-color: #525B44;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#cartco i {
+    color: #fd3029;
+    font-size: clamp(1rem, 1.2vw, 1.7rem);
+}
+
+#cartco img {
+    width: 70px;
+}
+
+#cartco td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+#cartco td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+
+#cartco td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+
+#cartco td:nth-child(4) {
+    width: 150px;
+    text-align: center;
+}
+
+#cartco td:nth-child(4), 
+#cartco td:nth-child(5),
+#cartco td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+
+#cartco td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cartco table thead {
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+}
+
+#cartco table thead td {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: clamp(1.1rem, 1.1vw, 1.7rem);
+    padding: 18px 0;
+}
+
+#cartco table tr td {
+    padding-top: 15px;
+}
+
+#cartco table td {
+    font-size: clamp(1.1rem, 1.1vw, 1.7rem);
+}
+
+.normalbtn {
+    font-size: clamp(1rem, 0.7vw, 1.6rem);
+    font-weight: 200;
+    color: #fff;
+    padding: 12px 20px;
+    background-color: #fd3029;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    margin-top: 10px;
+}
+
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#codepon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3, 
+#subtotal h3 {
+    padding-bottom: 15px;
+}
+
+#codepon input {
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #fff;
+}
+
+#subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #fff;
+    padding: 30px;
+    background-color: #525B44;
+}
+
+#subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td {
+    width: 50%;
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: clamp(1.1rem, 1.1vw, 1.7rem);
+} 
+
+@media(max-width: 1110px) {
+    .section-p1 {
+        padding: 20px 10px;
+    }
+}
+
+@media(max-width: 500px) {
+    #cart-add {
+        flex-direction: column;
+    }
+
+    #codepon {
+        width: 100%;
+    }
+
+    #subtotal {
+        width: 100%;
+        padding: 20px;
+    }
+}
