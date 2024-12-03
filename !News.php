@@ -9,6 +9,17 @@
 </head>
 
 <body>
+    <?php 
+        include "functions/conn.php";
+        $sql = "SELECT Text FROM adminedit ORDER BY ID DESC LIMIT 1"; // Adjust according to your ID column
+        $result = $conn->query($sql);
+        
+        if ($result && $row = $result->fetch_assoc()) {
+            $latestMessage = htmlspecialchars($row['Text']); 
+        } else {
+            $latestMessage = "No messages found."; 
+        }
+    ?>
 <div class="wrapper">
         
         <!-- Header Section -->
@@ -46,18 +57,7 @@
                                                                                             font-family: Oswald;">RE</span>US</p>
                     
                     <p class="baba-ng-astreus">
-                    <h3><?php 
-                            include "functions/conn.php";
-            $sql = "SELECT Text FROM adminedit ORDER BY ID DESC LIMIT 1"; // Adjust according to your ID column
-                            $result = $conn->query($sql);
-    
-                                if ($result && $row = $result->fetch_assoc()) {
-                                        $latestMessage = htmlspecialchars($row['Text']); 
-                                    } else {
-                                        $latestMessage = "No messages found."; 
-                    }
-                    ?></h3> 
-                    <!-- Get the text from the latest id of text. -->
+                    <?php echo $latestMessage; ?>
                     </p>
                     </div>
                 </div>
