@@ -6,6 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyusi Esports</title>
     <link rel="stylesheet" href="css/QCesports.css">
+    <style>
+        .container1 {
+    background-color: rgba(203, 44, 44, 0.7);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  #textSize{
+    font-size: 25px;
+    line-height: 50px;
+    letter-spacing: 0.009rem
+  }
+  .faq-section {
+    margin-bottom: 20px; 
+    padding: 15px;
+    border: 1px solid #a11818; 
+    border-radius: 15px; 
+    background-color: #711818; 
+  }
+  .faqtext{
+    letter-spacing: 0.05rem;
+  }
+    </style>
 </head>
 
 <body>
@@ -17,21 +43,21 @@
 
         <!-- About Us Main Body -->
         <main>
-            <h1 class="esports-title"><span class="red-e">A</span>bout Us</h1>
+        <h1 class="esports-title"><span class="red-e">A</span>bout Us</h1>
 
-            <div class="container1">
-                <p id="textSize">Kyusi Esports Community is a school-based non academic organization 
-                    of Quezon City University. Established on November 2023
-                    and was fully accredited on March 2024, the organization 
-                    set their foot on the Esports industry and took part of 
-                    many tournaments althroughout it's existence as a growing
-                     organization. With over a hundred members including external
-                      teams and individuals from neighboring schools, Kyusi Esports
-                       Community continues to nurture the talents and passion of QCians.
-                        The organization also welcomed partnerships from many businesses including,
-                         Kyusi Nova, DDPS, JMAEX - QCU, Dark League Studios'
-                         Estudyante Esports, and many more.</p>
-            </div>
+        <div class="container1">
+            <p id="textSize">Kyusi Esports Community is a school-based non academic organization 
+                of Quezon City University. Established on November 2023
+                and was fully accredited on March 2024, the organization 
+                set their foot on the Esports industry and took part of 
+                many tournaments althroughout it's existence as a growing
+                organization. With over a hundred members including external
+                teams and individuals from neighboring schools, Kyusi Esports
+                Community continues to nurture the talents and passion of QCians.
+                    The organization also welcomed partnerships from many businesses including,
+                    Kyusi Nova, DDPS, JMAEX - QCU, Dark League Studios'
+                    Estudyante Esports, and many more.</p>
+        </div>
 
             <h1 class="esports-title">
                 <span class="esports-text"><span class="red-e">E</span>SPORTS</span>
@@ -92,7 +118,6 @@
         for a booth in case of school events where they can be invited.</p>
     </div>
   </div>
-
         </main>
 
         <!-- Footer -->
